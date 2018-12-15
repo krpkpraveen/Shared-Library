@@ -16,9 +16,14 @@ pipeline {
 					if (50 > 30) {
 						echo 'Third If condition executed!'
 						def browsers = ['chrome', 'firefox']
+						
 						newBrowsers = "${browsers[0]}" +"\\"+ "${browsers[1]}"
-						println "${newBrowsers}"
 						echo "${newBrowsers}"
+						\\Output: chrome\firefox
+						newBrowsers = "${browsers[0]}" +"//"+ "${browsers[1]}"
+						echo "${newBrowsers}"
+						\\Output: chrome//firefox
+						
 						for (int i = 0; i < browsers.size(); ++i) {
 							echo "Testing the ${browsers[i]} browser"
 						}

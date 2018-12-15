@@ -6,8 +6,18 @@ pipeline {
                 echo 'Building'
 				script {
 					if (12 > 3) {
-						echo 'If condition executed!'
+						echo 'First If condition executed!'
 					}
+					
+					if (12 > 33) {
+						echo 'Second If condition executed!'
+					}
+					
+					if (50 > 30) {
+						echo 'Third If condition executed!'
+					}
+					
+					
 				}
             }
         }

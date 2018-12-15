@@ -4,6 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building'
+				if (12 > 3) {
+					echo 'If condition executed!'
+				}
             }
         }
         stage('Test') {

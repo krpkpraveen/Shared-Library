@@ -19,10 +19,10 @@ pipeline {
 						
 						newBrowsers = "${browsers[0]}" +"\\"+ "${browsers[1]}"
 						echo "${newBrowsers}"
-						\\Output: chrome\firefox
+						/*Output: chrome\firefox*/
 						newBrowsers = "${browsers[0]}" +"//"+ "${browsers[1]}"
 						echo "${newBrowsers}"
-						\\Output: chrome//firefox
+						/*Output: chrome//firefox */
 						
 						for (int i = 0; i < browsers.size(); ++i) {
 							echo "Testing the ${browsers[i]} browser"

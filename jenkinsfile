@@ -36,7 +36,7 @@ pipeline {
             steps {
                 echo 'Testing'
 				script {
-					def browsers = ['chrome', 'firefox']
+					browsers = ['chrome', 'firefox']
 					
 					newBrowsers = "${browsers[0]}" +"\\"+ "${browsers[1]}"
 					echo "${newBrowsers}"
